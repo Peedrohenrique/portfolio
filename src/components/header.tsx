@@ -25,14 +25,12 @@ export function Header({ delay }: { delay: number }) {
                         />
                     </div>
                     <BlurFade delay={delay}>
-                        {DATA ? (
-                            <Avatar className="size-28 border">
-                                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                                <AvatarFallback>{DATA.initials}</AvatarFallback>
-                            </Avatar>
-                        ) : (
-                            <Skeleton className="size-28 rounded-full" />
-                        )}
+                        <Avatar className="size-28 border">
+                            <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                            <AvatarFallback>
+                                <Skeleton className="size-28 rounded-full" />
+                            </AvatarFallback>
+                        </Avatar>
                     </BlurFade>
                 </div>
             </div>
