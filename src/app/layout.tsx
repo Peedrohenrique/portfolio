@@ -7,7 +7,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Portfólio Pedro Henrique",
+  title: "Pedro Henrique",
   description: "Portfólio pessoal de Pedro Henrique",
 };
 
