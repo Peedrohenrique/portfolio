@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Desenvolvedor apaixonado por tecnologia, focado em criar soluções eficientes e colaborativas.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "Desenvolvedor com especialização em tecnologias modernas e criação de soluções escaláveis, focado em proporcionar uma experiência de usuário de alta qualidade. Aplicando as melhores práticas e inovações da indústria, busco constantemente aprimorar minhas habilidades e acompanhar as tendências do setor. Além das competências técnicas, valorizo a colaboração em equipe, com comunicação clara e organização, sempre focado em entregar resultados que agreguem valor ao negócio e mantenham a qualidade e os prazos.",
   avatarUrl: "/me.png",
   skills: [
     "Tailwind CSS",
@@ -29,7 +29,7 @@ export const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" }
   ],
   contact: {
-    email: "hello@example.com",
+    email: "pedro25henrique@live.com",
     tel: "+55 85 99735 8507",
     social: {
       GitHub: {
