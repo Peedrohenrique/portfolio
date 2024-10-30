@@ -3,6 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import * as React from "react"
 import BlurFade from "./ui/blur-fade";
 import BlurFadeText from "./ui/blur-fade-text";
+import { Skeleton } from "@/components/ui/skeleton"
 
 export function Header({ delay }: { delay: number }) {
     return (
@@ -24,10 +25,14 @@ export function Header({ delay }: { delay: number }) {
                         />
                     </div>
                     <BlurFade delay={delay}>
-                        <Avatar className="size-28 border">
-                            <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                            <AvatarFallback>{DATA.initials}</AvatarFallback>
-                        </Avatar>
+                        {DATA ? (
+                            <Avatar className="size-28 border">
+                                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                                <AvatarFallback>{DATA.initials}</AvatarFallback>
+                            </Avatar>
+                        ) : (
+                            <Skeleton className="size-28 rounded-full" />
+                        )}
                     </BlurFade>
                 </div>
             </div>

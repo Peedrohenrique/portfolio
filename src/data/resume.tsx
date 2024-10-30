@@ -36,14 +36,12 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/Peedrohenrique",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/pedro-henrique-b09b64206/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       email: {
