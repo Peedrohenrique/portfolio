@@ -49,9 +49,9 @@ export function Contact({ daley }: { daley: number }) {
             message: values.Message
         };
 
-        const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID as string;
-        const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
-        const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY as string;
+        const serviceID = process.env.SERVICE_ID as string;
+        const templateID = process.env.TEMPLATE_ID as string;
+        const publicKey = process.env.KEY as string;
 
 
         await emailjs.send(serviceID, templateID, templateParams, publicKey)
