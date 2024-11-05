@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import { About } from "@/components/about";
 import { Work } from "@/components/work";
 import { Education } from "@/components/education";
+import { Skill } from "@/components/skill";
 
 export default function Home() {
   const BLUR_FADE_DELAY = 0.04;
@@ -12,7 +13,8 @@ export default function Home() {
       <Header delay={BLUR_FADE_DELAY} />
       <About delay={BLUR_FADE_DELAY} />
       <Work delay={BLUR_FADE_DELAY} />
-      <Education deley={BLUR_FADE_DELAY} />
+      <Education delay={BLUR_FADE_DELAY} />
+      <Skill delay={BLUR_FADE_DELAY} />
     </main>
   );
 }
