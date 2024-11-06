@@ -26,7 +26,7 @@ export function Contact({ daley }: { daley: number }) {
         Message: z.string().min(1, { message: "Por favor, insira uma mensagem." }),
     });
 
-    const [loading, setLoading] = useState<boolean>(false);
+    const [loading, setLoading] = useState<boolean>(true);
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -150,9 +150,9 @@ export function Contact({ daley }: { daley: number }) {
                                         )}
                                     />
                                 </div>
-                                <Button type="submit" className="w-full shadow-lg">
+                                <Button type="submit" className="w-full shadow-lg" disabled={loading}>
                                     {loading ? (
-                                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                        <Loader2 className="animate-spin-custom mr-2 h-4 w-4" /> // Verifique se a animação funciona no ícone
                                     ) : (
                                         'Enviar'
                                     )}
