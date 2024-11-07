@@ -12,7 +12,7 @@ import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "@/components/ui/form";
 import { toast } from "@/hooks/use-toast";
-
+import confetti from "canvas-confetti";
 export function Contact({ daley }: { daley: number }) {
     const formSchema = z.object({
         name: z.string().min(2, {
@@ -26,7 +26,7 @@ export function Contact({ daley }: { daley: number }) {
         Message: z.string().min(1, { message: "Por favor, insira uma mensagem." }),
     });
 
-    const [loading, setLoading] = useState<boolean>(true);
+    const [loading, setLoading] = useState<boolean>(false);
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -60,6 +60,7 @@ export function Contact({ daley }: { daley: number }) {
                     title: "E-mail enviado! ✅",
                     description: "Seu e-mail foi enviado com sucesso!",
                 });
+                handleConfete();
                 setLoading(false);
             })
             .catch((_err) => {
@@ -72,6 +73,17 @@ export function Contact({ daley }: { daley: number }) {
             });
 
         form.reset();
+    }
+
+    const handleConfete = () => {
+        confetti({
+            particleCount: 50, // Ajuste a quantidade de partículas conforme necessário
+            angle: 90,         // Muda o ângulo para um efeito mais centralizado
+            spread: 70,        // Aumenta a propagação dos confetes
+            origin: { x: 0.5, y: 0.75 }, // Centraliza na tela
+            gravity: 0.5,      // Ajusta o efeito da gravidade
+            decay: 0.9,        // Controla o tempo que o confete vai durar
+        });
     }
 
     return (
@@ -152,7 +164,7 @@ export function Contact({ daley }: { daley: number }) {
                                 </div>
                                 <Button type="submit" className="w-full shadow-lg" disabled={loading}>
                                     {loading ? (
-                                        <Loader2 className="animate-spin-custom mr-2 h-4 w-4" /> // Verifique se a animação funciona no ícone
+                                        <Loader2 className="animate-spin-custom mr-2 h-4 w-4" />
                                     ) : (
                                         'Enviar'
                                     )}
