@@ -7,6 +7,7 @@ import { Education } from "@/components/education";
 import { Skill } from "@/components/skill";
 import { Contact } from "@/components/contact";
 import { Repository } from "@/components/repository";
+import { Project } from "@/components/project";
 
 export default function Home() {
   const BLUR_FADE_DELAY = 0.04;
@@ -17,6 +18,7 @@ export default function Home() {
       <Work delay={BLUR_FADE_DELAY} />
       <Education delay={BLUR_FADE_DELAY} />
       <Skill delay={BLUR_FADE_DELAY} />
+      <Project delay={BLUR_FADE_DELAY} />
       <Repository daley={BLUR_FADE_DELAY} />
       <Contact daley={BLUR_FADE_DELAY} />
     </main>

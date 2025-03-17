@@ -25,6 +25,46 @@ export const DATA = {
     "Docker",
     "MySQL",
   ],
+
+  projects: [
+    {
+      title: "MyPet",
+      href: "https://www.mypetpage.com.br/",
+      dates: "Janeiro 2025 - Março 2025",
+      active: true,
+      description:
+        "",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Firebase",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Magic UI",
+        "Mercado Pago",
+        "Cloudflare",
+        "Resend",
+        "zoho"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.mypetpage.com.br/",
+          icon: <Icons.globe /> ,
+        },
+        {
+          type: "Privado",
+          href: "",
+          icon: <Icons.github />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+  
+  ],
+
+
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" }
   ],
