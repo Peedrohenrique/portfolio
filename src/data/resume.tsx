@@ -54,12 +54,12 @@ export const DATA = {
         },
         {
           type: "Privado",
-          href: "",
+          href: "https://www.mypetpage.com.br/",
           icon: <Icons.github />,
         },
       ],
       image: "",
-      video: "",
+      video: "https://firebasestorage.googleapis.com/v0/b/mypetpage-9e175.firebasestorage.app/o/videos%2FmyPet.mp4?alt=media&token=8aca5172-6c2f-4e57-93a7-4c05acaa6cde",
     },
   
   ],
