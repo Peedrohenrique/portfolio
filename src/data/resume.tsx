@@ -50,7 +50,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://www.mypetpage.com.br/",
-          icon: <Icons.globe /> ,
+          icon: <Icons.globe />,
         },
         {
           type: "Privado",
@@ -61,7 +61,7 @@ export const DATA = {
       image: "",
       video: "https://firebasestorage.googleapis.com/v0/b/mypetpage-9e175.firebasestorage.app/o/videos%2FmyPet.mp4?alt=media&token=8aca5172-6c2f-4e57-93a7-4c05acaa6cde",
     },
-  
+
   ],
 
 
@@ -97,13 +97,24 @@ export const DATA = {
     {
       company: "Grupo Educacional Aqui Você Pode",
       href: "https://www.aquivocepode.com.br/",
+      badges: ["Analista"],
+      location: "Presencial",
+      title: "Analista de Desenvolvimento de Sistemas I",
+      logoUrl: "/avp.png",
+      start: "Nov 2025",
+      end: undefined,
+      description: "Atualmente, atuo como Analista de Desenvolvimento de Sistemas I, com foco em desenvolvimento Front-end utilizando tecnologias como JavaScript, React.js e Next.js para criar interfaces modernas, responsivas e de alto desempenho. Tenho experiência na construção de diversas aplicações, incluindo um sistema interno que atendeu a demandas estratégicas da empresa, agregando valor e eficiência aos processos internos.",
+    },
+    {
+      company: "Grupo Educacional Aqui Você Pode",
+      href: "https://www.aquivocepode.com.br/",
       badges: ["developer"],
       location: "Presencial",
-      title: "Programador júnior",
+      title: "Programador Júnior",
       logoUrl: "/avp.png",
       start: "Jul 2023",
-      end: undefined,
-      description: "Atualmente, atuo como Desenvolvedor Front-end, com foco em tecnologias como JavaScript, React.js e Next.js para desenvolver interfaces modernas, responsivas e de alto desempenho. Tenho experiência na construção de diversas aplicações, incluindo um sistema interno que atendeu a demandas estratégicas da empresa, agregando valor e eficiência aos processos internos.",
+      end: "Out 2025",
+      description: "Atuei como Desenvolvedor Front-end, com foco em tecnologias como JavaScript, React.js e Next.js para desenvolver interfaces modernas, responsivas e de alto desempenho. Participei da construção de diversas aplicações, incluindo um sistema interno que atendeu a demandas estratégicas da empresa, agregando valor e eficiência aos processos internos.",
     },
     {
       company: "Grupo Educacional Aqui Você Pode",
